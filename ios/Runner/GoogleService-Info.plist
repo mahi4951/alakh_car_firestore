@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>631007728535-l1a623rhg6ck5pqt7hl1i2qgdh399k6s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.631007728535-l1a623rhg6ck5pqt7hl1i2qgdh399k6s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDHCai0RzukwQWWjfKP_Ok5ZKHAm8XMRtA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>631007728535</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lionode.alakhcar</string>
+	<key>PROJECT_ID</key>
+	<string>alakhcar-8e4e1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>alakhcar-8e4e1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:631007728535:ios:e18ed544aa180c81342ad2</string>
+	<key>DATABASE_URL</key>
+	<string>https://alakhcar-8e4e1-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

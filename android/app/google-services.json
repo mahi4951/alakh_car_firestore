@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "631007728535",
+    "firebase_url": "https://alakhcar-8e4e1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "alakhcar-8e4e1",
+    "storage_bucket": "alakhcar-8e4e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631007728535:android:87ba67c6c0459146342ad2",
+        "android_client_info": {
+          "package_name": "com.lionode.alakh_car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631007728535-mrsd0v7qcsclu48akkp6b9pqn8f648nq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQuVo2mAfWU2I2Bl7BZfCxpq-RYLA86gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631007728535-j152ropqn4pcm4jlr04h24skhbpqdpar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
