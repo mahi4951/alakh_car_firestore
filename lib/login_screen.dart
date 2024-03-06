@@ -1,5 +1,4 @@
 import 'package:alakh_car/screens/home.dart';
-import 'package:alakh_car/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -38,7 +37,6 @@ class _LoginScreenState extends State<LoginScreen> {
     String email = result['data']['email'].toString();
     String firstName = result['data']['first_name'].toString();
     String lastName = result['data']['last_name'].toString();
-    String path = result['data']['path'].toString().getPath();
 
     if (statusCode == "201") {
       final prefs = await SharedPreferences.getInstance();
@@ -46,7 +44,6 @@ class _LoginScreenState extends State<LoginScreen> {
       await prefs.setString('email', email);
       await prefs.setString('first_name', firstName);
       await prefs.setString('last_name', lastName);
-      await prefs.setString('path', path);
       await prefs.setBool('isLoggedIn', true);
 
       isLoggedIn = true;

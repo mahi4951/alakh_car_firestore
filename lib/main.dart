@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'package:alakh_car/screens/OTP_screen.dart';
 import 'package:alakh_car/screens/admin/banner_screen.dart';
 import 'package:alakh_car/screens/admin/brand_screen.dart';
 import 'package:alakh_car/screens/admin/car_screen.dart';
@@ -16,6 +17,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
 
 // Make sure to import your CarProvider class
 
@@ -27,19 +29,40 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 //   runApp(const MyApp());
 // }
 
+// Future<void> main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+//   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+//   await Firebase.initializeApp(
+//     options: DefaultFirebaseOptions.currentPlatform,
+//   );
+//   await FirebaseAppCheck.instance.activate();
+
+//   // await FirebaseAppCheck.instance.activate();
+
+//   WidgetsFlutterBinding.ensureInitialized();
+//   HttpOverrides.global = MyHttpOverrides();
+//   runApp(const MyApp());
+//   FlutterNativeSplash.remove();
+// }
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
+  // Initialize Firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  // await FirebaseAppCheck.instance.activate();
 
-  WidgetsFlutterBinding.ensureInitialized();
+  // Initialize App Check
+  await FirebaseAppCheck.instance.activate();
+
+  // Set custom HttpOverrides
   HttpOverrides.global = MyHttpOverrides();
-  runApp(const MyApp());
+
+  // Remove native splash screen
   FlutterNativeSplash.remove();
+
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -61,6 +84,7 @@ class MyApp extends StatelessWidget {
         //'/': (context) => const SplashFuturePage(),
 
         // 'SplashScreen': (context) => SplashScreen(),
+        '/home': (context) => OTPScreen(),
         '/': (context) => const Home(),
         '/color': (context) => ColorScreen(),
         '/brand': (context) => BrandScreen(),
